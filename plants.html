@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🌱 My Plants</h1>
+<div id="plants"></div>
+
+<script>
+if (localStorage.getItem("loggedIn") !== "true") {
+  document.getElementById("plants").innerHTML = "<h2>Please login first</h2>";
+} else {
+
+  const flowers = ["Rose", "Tulip"];
+
+  let container = document.getElementById("plants");
+
+  flowers.forEach((flower) => {
+    container.innerHTML += `
+      <div class="card" onclick="showPlant('${flower}')">
+        <h3>${flower}</h3>
+      </div>
+    `;
+  });
+}
+
+// عند الضغط
+function showPlant(flower) {
+
+  const images = {
+    Rose: "photo/images.webp",
+    Tulip: "photo/photo_2026-04-26_22-00-47.jpg"
+  };
+
+  document.getElementById("plants").innerHTML = `
+    <h1>${flower}</h1>
+
+    <img src="${images[flower]}" 
+         style="width:250px; height:200px; object-fit:cover; border-radius:15px; margin-bottom:15px;">
+
+    <p>🌡 Temperature: 16°C</p>
+    <p>💧 Humidity: 76%</p>
+    <h2>Good ✅</h2>
+
+    <button onclick="location.reload()">⬅ Back</button>
+  `;
+}
+</script>
+
+</body>
+</html>

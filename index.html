@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Flower Shop</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🌸 Flower Shop</h1>
+
+  <!-- زر الثلاث خطوط -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- القائمة -->
+  <div class="menu" id="menu">
+  <a onclick="loadPage('home.html')">Home</a>
+  <a onclick="loadPage('cart.html')">Cart</a>
+  <a onclick="loadPage('contact.html')">Contact</a>
+  <a onclick="loadPage('login.html')">Login</a>
+  <!-- <a onclick="loadPage('myplants.html')">My Plants</a> -->
+  <a onclick="loadPage('plants.html')">My Plants</a>
+</div>
+</header>
+
+<!-- iframe -->
+<iframe id="frame" src="home.html"></iframe>
+
+<script src="script.js"></script>
+</body>
+</html>
