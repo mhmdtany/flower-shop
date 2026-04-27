@@ -36,7 +36,7 @@ if (document.getElementById("cart")) {
   let total = 0;
 
   const data = {
-    Rose: { img: "photo/images.webp" },
+    Rose: { img: "photo/rose.jpg" },
     Tulip: { img: "photo/photo_first.jpg" }
   };
 
@@ -79,8 +79,9 @@ if (document.getElementById("details")) {
       price: 15,
       desc: "Rose flower symbolizes love.",
       images: [
-        "photo/images.webp",
-        "photo/download.jpg"
+        "photo/rose.jpg",
+        "photo/rosey.jpg",
+        "photo/rooose.jpg"
       ]
     }
   };
