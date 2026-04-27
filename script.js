@@ -37,7 +37,7 @@ if (document.getElementById("cart")) {
 
   const data = {
     Rose: { img: "photo/images.webp" },
-    Tulip: { img: "photo/download.jpg" }
+    Tulip: { img: "photo/photo_first.jpg" }
   };
 
   let container = document.getElementById("cart");
